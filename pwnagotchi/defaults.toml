@@ -90,7 +90,7 @@ main.plugins.ups_lite.shutdown = 2
 
 main.plugins.gpio_buttons.enabled = false
 
-main.plugins.led.enabled = true
+main.plugins.led.enabled = false
 main.plugins.led.led = 0
 main.plugins.led.delay = 200
 main.plugins.led.patterns.loaded = "oo  oo  oo oo  oo  oo  oo"
@@ -199,7 +199,7 @@ ui.web.origin = ""
 ui.web.port = 8080
 ui.web.on_frame = ""
 
-ui.display.enabled = true
+ui.display.enabled = false
 ui.display.rotation = 180
 ui.display.type = "waveshare_2"
 ui.display.color = "black"
