@@ -23,7 +23,8 @@ More specifically, Pwnagotchi is using an [LSTM with MLP feature extractor](http
 
 Multiple units within close physical proximity can "talk" to each other, advertising their presence to each other by broadcasting custom information elements using a parasite protocol I've built on top of the existing dot11 standard. Over time, two or more units trained together will learn to cooperate upon detecting each other's presence by dividing the available channels among them for optimal pwnage.
 
-Changes made to stop bootloops on Banana Pi and Orange Pi. Removed all calls to brcm and led as we don't install nexmon (yet) and the led isn't compatible on most boards. Also removed the numpy requirement to make the install instructions easier.
+Fikolmij's/Dal's changes:
+Changes made to stop bootloops on Banana Pi and Orange Pi. Removed all calls to brcm and led as we don't install nexmon (yet) and the led isn't compatible on most boards. Also removed the numpy requirement to make the install instructions easier. Added correct jinja2, itsdangerous and Werkzeug to requirements.
 
 ## Documentation
 
