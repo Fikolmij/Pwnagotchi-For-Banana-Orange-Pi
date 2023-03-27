@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# starts mon0
+# starts mon0 set wlanxxxxxx to iwconfig iface name
 start_monitor_interface() {
-  iw phy "$(iw phy | head -1 | cut -d" " -f2)" interface add mon0 type monitor && ifconfig mon0 up
+  iw phy `iw dev wlanxxxxxx info | gawk '/wiphy/ {printf "phy" $2}'` interface add mon0 type monitor
 }
 
 # stops mon0
